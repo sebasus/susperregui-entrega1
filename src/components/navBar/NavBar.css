@@ -1,0 +1,23 @@
+.conteinerList{
+    display: flex;
+    justify-content: center;
+
+}
+.list{
+    width: 90%;
+    margin: 3rem auto;
+    background-color: rgb(10, 227, 227);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.logoImg{
+    margin-top: .5rem;
+    
+}
+.section{
+    list-style: none;
+    width: 10rem;
+    margin: 1rem;
+}
