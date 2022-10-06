@@ -1,11 +1,16 @@
 import './App.css';
 import NavBar from "./components/navBar/NavBar";
-import ItemListConteiner from "./components/ItemListConteiner/ItemListConteiner";
+import { BrowserRouter } from 'react-router-dom';
+//import ItemList from "./components/ItemList/ItemList";
+import Card from "./components/Card/Card";
+
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <ItemListConteiner greeting={"Bienvenidos"}/>
+      <BrowserRouter>
+        <NavBar/>
+        <Card/>
+      </BrowserRouter>
     </div>
   );
 }
