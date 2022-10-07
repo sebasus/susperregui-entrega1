@@ -1,9 +1,9 @@
 import Card from "../Card/Card";
 
 const ItemList = ({info}) => {
-    console.log({info});
+    console.log(info);
     return (
-        <Card/>
+        info.map(Producto => <Card  item={Producto}/>)
     );}
 
 
