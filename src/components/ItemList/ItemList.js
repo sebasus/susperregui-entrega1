@@ -1,14 +1,9 @@
 import Card from "../Card/Card";
 
-const ItemList = () => {
+const ItemList = ({info}) => {
+    console.log({info});
     return (
-        <div className="conteiner">
-            <div className="row">
-                <div className="col-mid-4">
-                    <Card/>
-                </div>
-            </div>
-        </div>
+        <Card/>
     );}
 
 

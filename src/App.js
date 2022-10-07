@@ -1,17 +1,16 @@
 import './App.css';
 import NavBar from "./components/navBar/NavBar";
 import { BrowserRouter } from 'react-router-dom';
-//import ItemList from "./components/ItemList/ItemList";
-import Card from "./components/Card/Card";
+import ItemList from "./components/ItemList/ItemList";
 
 function App() {
   return (
-    <div className="App">
+    
       <BrowserRouter>
         <NavBar/>
-        <Card/>
+        <ItemList/>
       </BrowserRouter>
-    </div>
+    
   );
 }
 
