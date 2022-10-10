@@ -1,9 +1,8 @@
-import Card from "../Card/Card";
+import Item from "../Item/Item";
 
 const ItemList = ({info}) => {
-    console.log(info);
     return (
-        info.map(Producto => <Card  item={Producto}/>)
+        info.map(Producto => <Item  item={Producto}/>)
     );}
 
 

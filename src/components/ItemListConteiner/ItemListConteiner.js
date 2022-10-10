@@ -1,20 +1,29 @@
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import Producto from "../Productos/Producto";
-
+import { useParams } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const ItemListContainer = () => {
     const [info, setInfo] = useState([]);
+    const{cat} = useParams ();
+    
     
     useEffect(() => {
-        const getInfo = new Promise (resolve =>{
+        const promiseProductos = new Promise (resolve =>{
             setTimeout(() => {
                 resolve (Producto)
-            }, 100)
+            }, 2000)
         });
-        getInfo.then(res => setInfo(res));
-        
-    }, [])
+        promiseProductos.then((res)=>{
+            if (!cat) {
+                setInfo(res);
+            } else {
+                setInfo(Producto.filter((item)=>item.cat == {cat}));  
+            }
+        })
+    }, [cat]);
+
     return(
         <ItemList info={info}/>
         );

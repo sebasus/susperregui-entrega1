@@ -10,20 +10,22 @@ const NavBar = () =>{
         <header>    
             <nav className="navBar" >
                 <ul className="list">
-                    <LogoImg className="logoImg"/>   
+                    <Link to={'/'}><LogoImg className="logoImg"/></Link>    
                     <Brand/> 
                     <div className="conteinerList">
                         <li className="section">
-                            <Link to={'/'}>Sahumerios</Link> 
+                            <Link to={'/Sahumerios'}>Sahumerios</Link> 
                         </li>
                         <li className="section">
-                            <Link to={'/'}>Velas</Link>   
+                            <Link to={'/Velas'}>Velas</Link>   
                         </li>
                         <li className="section">
-                            <Link to={'/'}>Aromatizantes</Link> 
+                            <Link to={'/Aromatizantes'}>Aromatizantes</Link> 
+                        </li>
+                        <li className="section">
+                            <Link to={'/Cart'}><CartWidget/></Link> 
                         </li>
                     </div>
-                    <CartWidget/>
                 </ul>
             </nav>
         </header>    
