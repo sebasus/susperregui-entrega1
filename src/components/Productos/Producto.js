@@ -1,4 +1,4 @@
-const Producto =[
+const productos =[
     {id:1, title:"Sagrada Madre", description:"Sahumerios de Citronella, Naranja y Palo santo, extra duracion", price:270, img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/002/052/925/products/sahumerios-palo-santo-051-5f008253e1a68c226316547242960108-640-0.jpg", cat:"Sahumerios"
     },
     {id:2, title:"Aromanza", description:"Sahumerios en polvo, fragancias extra fuertes", price:320,img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiK2GMALocqrlTC64I02E-L5QqvSc5eXqVnw&usqp=CAU", cat:"Sahumerios"
@@ -28,4 +28,13 @@ const Producto =[
     ];
 
 
-export default Producto;
+    export const getProduct = (id) => {
+        return new Promise((resolve) => {
+            const prod = productos.find(p => p.id === parseInt(id))
+            setTimeout(() => {
+                resolve(prod)
+            }, 1000)
+        })
+      }
+
+      export default productos;
