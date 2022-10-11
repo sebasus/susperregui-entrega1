@@ -11,7 +11,7 @@ const Item = ({item}) =>{
             <div className="card-body">
               <h3 className="card-title">{item.title}</h3>
               <div>
-                <Link to= {`/Detalle/Prod${item.id}`}> Ver detalle </Link>
+                <Link to= {`/Prod${item.id}`}> Ver detalle </Link>
               </div>
             </div>
           </div>
