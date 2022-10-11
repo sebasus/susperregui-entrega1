@@ -13,7 +13,7 @@ const ItemDetail = ({info}) =>{
                 <p>{info.detail}</p>
                 <hr/>
                 <p>{info.price}</p>
-                <Counter/>
+                <Counter  stock= {10} />
             </div>
           </div>
         </div>

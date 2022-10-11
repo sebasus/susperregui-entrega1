@@ -15,14 +15,13 @@ const Counter = ({stock}) => {
 
   return (
 
-    <div className='Count'>
-    <button disabled={Contador <= 1} onClick={Restar}>-</button>
-  <span>{Contador}</span>
-    <button disabled={Contador >= stock} onClick={Sumar}>+</button>  
     <div>
-    <button disabled={stock <= 0} >Agregar al carrito</button>
-    </div>
-
+      <button disabled={Contador <= 1} onClick={Restar}>-</button>
+        <span>{Contador}</span>
+      <button disabled={Contador >= stock} onClick={Sumar}>+</button>  
+      <div>
+        < button disabled={stock <= 0} >Agregar al carrito</button>
+      </div>
     </div>
   );
 };
