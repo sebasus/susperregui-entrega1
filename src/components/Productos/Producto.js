@@ -19,11 +19,11 @@ const Producto =[
     },
     {id:10, title:"Urban Jungle", description:"", price:290, img:"https://arredo.vtexassets.com/arquivos/ids/354908-800-auto?v=637992988161800000&width=800&height=auto&aspect=true", cat:"Aromatizantes"
     },
-    {id:11, title:"Iluminarte", description:"", price:320, img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/022/438/products/rqewewfwe1-2b23e7e83b946f571116533997842819-1024-1024.png", cat:"velas"
+    {id:11, title:"Iluminarte", description:"", price:320, img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/022/438/products/rqewewfwe1-2b23e7e83b946f571116533997842819-1024-1024.png", cat:"Velas"
     },
-    {id:12, title:"Organic Spa", description:"", price:180, img:"http://d2r9epyceweg5n.cloudfront.net/stores/001/623/122/products/image000171-cca8d0660bc094f98616331169505183-640-0.jpeg", cat:"velas"
+    {id:12, title:"Organic Spa", description:"", price:180, img:"http://d2r9epyceweg5n.cloudfront.net/stores/001/623/122/products/image000171-cca8d0660bc094f98616331169505183-640-0.jpeg", cat:"Velas"
     },
-    {id:13, title:"Kala", description:"", price:260, img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/161/840/products/151-d6d48916890e48cecf16520245211392-640-0.png", cat:"velas"
+    {id:13, title:"Kala", description:"", price:260, img:"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/161/840/products/151-d6d48916890e48cecf16520245211392-640-0.png", cat:"Velas"
     }
     ];
 
