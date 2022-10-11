@@ -14,7 +14,6 @@ const ItemDetail = ({info}) =>{
                 <hr/>
                 <p>{info.price}</p>
                 <Counter/>
-              <button>Agregar al carrito</button>
             </div>
           </div>
         </div>
